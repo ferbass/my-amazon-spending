@@ -38,9 +38,8 @@ def _load_category_rules(path):
         return yaml.safe_load(f) or {}
 
 
-def _categorize_series(names: pd.Series) -> pd.Series:
+def _categorize_series(names: pd.Series, rules: dict) -> pd.Series:
     """Vectorized categorization: one compiled regex per category, first match wins."""
-    rules = _load_category_rules(CATEGORIES_FILE)
     result = pd.Series('Other', index=names.index, dtype='object')
     unassigned = pd.Series(True, index=names.index)
     lowered = names.fillna('').astype(str).str.lower()
@@ -144,7 +143,7 @@ def load_and_clean_data(physical_path, digital_path, refunds_path):
         main_df = pd.concat(parts, ignore_index=True)
         main_df['Year'] = main_df['Order Date'].dt.year
         main_df['Month'] = main_df['Order Date'].dt.month
-        main_df['Category'] = _categorize_series(main_df['Product Name'])
+        main_df['Category'] = _categorize_series(main_df['Product Name'], _load_category_rules(CATEGORIES_FILE))
 
     cancelled_df = _load_cancelled(physical_path)
     refunds_df = _load_refunds(refunds_path, physical_path)

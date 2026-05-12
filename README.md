@@ -110,6 +110,28 @@ python3 -m venv /tmp/pw && /tmp/pw/bin/pip install -q playwright \
 podman rm -f amazon-sample && rm -rf .sample-data
 ```
 
+## Tests
+
+Unit tests cover the CSV loaders and the categorizer (the parts where bugs
+have historically hidden — e.g. the pandas 3.0 dtype regression that silently
+zeroed out totals).
+
+Run them inside the container so you don't need to install anything locally:
+
+```bash
+podman exec my-amazon-orders-amazon-analysis-1 pip install --quiet pytest
+podman exec -w /app my-amazon-orders-amazon-analysis-1 python -m pytest tests/ -v
+```
+
+Or in a venv:
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements-dev.txt
+pytest tests/ -v
+```
+
 ## Tech
 
 Python 3.11 · Streamlit · pandas · Plotly Express.
