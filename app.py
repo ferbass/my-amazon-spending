@@ -3,9 +3,9 @@ import pandas as pd
 import plotly.express as px
 import os
 
-st.set_page_config(page_title="Amazon Order Analysis", layout="wide")
+st.set_page_config(page_title="My Amazon Spending", layout="wide")
 
-st.title("📦 Amazon Order History Analysis")
+st.title("📦 My Amazon Spending")
 
 # Configuration for data path (can be overridden by env var for Docker)
 DATA_DIR = os.getenv("DATA_DIR", "data/Your Amazon Orders")

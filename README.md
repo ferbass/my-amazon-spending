@@ -1,4 +1,4 @@
-# my-amazon-orders
+# My Amazon Spending
 
 Streamlit dashboard that reads your Amazon order history CSV export and produces
 personal spending analytics — lifetime total, year-over-year comparison,
