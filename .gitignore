@@ -1,5 +1,6 @@
 # Amazon data export — keep out of version control
 data/
+.sample-data/
 
 # Python
 __pycache__/
@@ -11,8 +12,8 @@ venv/
 # macOS
 .DS_Store
 
-# Local screenshots / scratch
-screenshot.png
+# Real-data screenshot at repo root — keep the sanitized one in docs/ tracked
+/screenshot.png
 
 # Claude Code machine-local settings
 .claude/settings.local.json

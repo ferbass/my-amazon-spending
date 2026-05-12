@@ -4,6 +4,11 @@ Streamlit dashboard that reads your Amazon order history CSV export and produces
 personal spending analytics — lifetime total, year-over-year comparison,
 category breakdown, top products.
 
+![Dashboard screenshot](docs/screenshot.png)
+
+> The screenshot above is rendered against synthetic sample data
+> (`scripts/gen_sample_orders.py`), not real purchases.
+
 ## Get your data
 
 1. Request your data from Amazon's privacy page (works on `.com`, `.co.jp`,
@@ -65,6 +70,30 @@ refine rules in `_categorize()` inside `app.py` to fit your purchase mix.
 | Env var    | Default                    | Purpose                          |
 |------------|----------------------------|----------------------------------|
 | `DATA_DIR` | `data/Your Amazon Orders`  | Folder containing `Order History.csv`. `docker-compose.yml` overrides this to `/data/Your Amazon Orders` for the bind mount. |
+
+## Regenerating the screenshot
+
+The shipped screenshot uses fake data so no personal info ends up in the repo.
+To regenerate after a UI change:
+
+```bash
+# 1. Generate sample CSV
+python3 scripts/gen_sample_orders.py ".sample-data/Your Amazon Orders/Order History.csv"
+
+# 2. Run a sidecar container against it
+podman run --rm -d --name amazon-sample -p 8502:8501 \
+  -v "$(pwd)/.sample-data:/data" -v "$(pwd):/app" \
+  -e "DATA_DIR=/data/Your Amazon Orders" \
+  my-amazon-orders-amazon-analysis
+
+# 3. Capture with Playwright (one-off venv)
+python3 -m venv /tmp/pw && /tmp/pw/bin/pip install -q playwright \
+  && /tmp/pw/bin/playwright install chromium
+/tmp/pw/bin/python scripts/screenshot.py http://localhost:8502 docs/screenshot.png
+
+# 4. Clean up
+podman rm -f amazon-sample && rm -rf .sample-data
+```
 
 ## Tech
 
