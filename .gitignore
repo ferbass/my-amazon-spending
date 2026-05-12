@@ -1,0 +1,18 @@
+# Amazon data export — keep out of version control
+data/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# macOS
+.DS_Store
+
+# Local screenshots / scratch
+screenshot.png
+
+# Claude Code machine-local settings
+.claude/settings.local.json
