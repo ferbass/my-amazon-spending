@@ -1,0 +1,574 @@
+# Category rules for the dashboard.
+#
+# A product is matched against each category in the order below; the FIRST hit
+# wins. Put narrow/specific categories above broad ones (e.g. "Kindle Devices"
+# above "Books" so the e-reader doesn't land in Books).
+#
+# Each keyword is a case-insensitive substring matched against the product
+# name. Keywords may contain Japanese characters or English — mix freely.
+# Edit, add, or reorder categories to match your purchase history.
+
+Subscriptions:
+  - prime
+  - kindle unlimited
+  - audible
+  - music unlimited
+  - prime video
+
+Gift Cards:
+  - gift card
+  - amazon gift
+  - ギフトカード
+  - ギフト券
+
+Kindle & E-Readers:
+  - kindle paperwhite
+  - kindle scribe
+  - kindle oasis
+  - kindle voyage
+  - fire tablet
+  - fire hd
+  - kindle 第
+  - kindle reader
+
+Computers & Office Electronics:
+  - laptop
+  - notebook pc
+  - mini pc
+  - barebone
+  - desktop
+  - monitor
+  - graphics card
+  - gpu
+  - cpu
+  - motherboard
+  - ssd
+  - hdd
+  - external drive
+  - ram ddr
+  - keyboard
+  - mouse
+  - webcam
+  - printer
+  - scanner
+  - router
+  - modem
+  - network
+  - ethernet
+  - パソコン
+  - ノートpc
+  - キーボード
+  - マウス
+  - モニター
+  - プリンター
+  - ルーター
+
+Mobile & Phone Accessories:
+  - iphone
+  - android phone
+  - smartphone
+  - galaxy
+  - pixel
+  - phone case
+  - screen protector
+  - phone charger
+  - phone stand
+  - magsafe
+  - スマホ
+  - スマートフォン
+  - 携帯
+  - ケース
+
+Audio & Headphones:
+  - headphone
+  - earphone
+  - earbud
+  - airpods
+  - speaker
+  - soundbar
+  - microphone
+  - microphone stand
+  - dac
+  - audio interface
+  - studio monitor
+  - イヤホン
+  - ヘッドホン
+  - ヘッドフォン
+  - スピーカー
+  - マイク
+
+Photography & Video:
+  - camera
+  - lens
+  - tripod
+  - gimbal
+  - drone
+  - sd card
+  - memory card
+  - flash
+  - camera bag
+  - camera strap
+  - カメラ
+  - レンズ
+  - 三脚
+
+TV & Home Entertainment:
+  - smart tv
+  - television
+  - hdmi
+  - chromecast
+  - apple tv
+  - roku
+  - streaming stick
+  - projector
+  - テレビ
+
+Electronics Accessories:
+  - usb
+  - cable
+  - charger
+  - power bank
+  - battery
+  - rechargeable
+  - adapter
+  - power strip
+  - surge protector
+  - hub
+  - dongle
+  - sim card
+  - ケーブル
+  - 充電
+  - バッテリー
+  - 電池
+  - アダプター
+
+Books & Magazines:
+  - book
+  - kindle edition
+  - kindle book
+  - paperback
+  - hardcover
+  - hardback
+  - magazine
+  - manga
+  - comic
+  - novel
+  - textbook
+  - cookbook
+  - audiobook
+  - 本
+  - 書籍
+  - 漫画
+  - 雑誌
+  - 文庫
+
+Movies, Music & Video Games:
+  - blu-ray
+  - bluray
+  - dvd
+  - 4k uhd
+  - vinyl
+  - cd album
+  - video game
+  - playstation
+  - xbox
+  - nintendo switch
+  - nintendo game
+  - ps5
+  - ps4
+  - controller
+  - gaming headset
+  - gaming chair
+  - ブルーレイ
+  - ゲーム
+
+Health & Personal Care:
+  - vitamin
+  - supplement
+  - protein powder
+  - first aid
+  - bandage
+  - thermometer
+  - mask
+  - hand sanitizer
+  - toothbrush
+  - toothpaste
+  - mouthwash
+  - dental
+  - razor
+  - shaver
+  - condom
+  - sanitary
+  - サプリメント
+  - 歯ブラシ
+  - 歯磨き
+  - マスク
+
+Beauty & Cosmetics:
+  - shampoo
+  - conditioner
+  - body wash
+  - hand soap
+  - face wash
+  - moisturizer
+  - lotion
+  - sunscreen
+  - lipstick
+  - mascara
+  - foundation
+  - perfume
+  - cologne
+  - nail polish
+  - hair dryer
+  - hair brush
+  - cosmetic
+  - beauty
+  - skincare
+  - シャンプー
+  - 石鹸
+  - 化粧品
+  - スキンケア
+  - 美容
+
+Food & Groceries:
+  - water
+  - sparkling water
+  - mineral water
+  - tea
+  - coffee
+  - juice
+  - soda
+  - beer
+  - wine
+  - sake
+  - whisky
+  - cereal
+  - snack
+  - chocolate
+  - candy
+  - cookie
+  - pasta
+  - rice
+  - noodle
+  - olive oil
+  - sauce
+  - seasoning
+  - 食品
+  - 飲料
+  - 水
+  - 茶
+  - お茶
+  - コーヒー
+  - 炭酸水
+  - sanpellegrino
+  - お菓子
+  - 米
+
+Kitchen & Dining:
+  - frying pan
+  - skillet
+  - pot lid
+  - cookware
+  - cutlery
+  - knife set
+  - kitchen knife
+  - cutting board
+  - mixing bowl
+  - measuring cup
+  - blender
+  - food processor
+  - toaster
+  - kettle
+  - microwave
+  - rice cooker
+  - coffee maker
+  - coffee grinder
+  - espresso machine
+  - dish rack
+  - thermos
+  - tumbler
+  - bottle
+  - mug
+  - キッチン
+  - 包丁
+  - 鍋
+  - フライパン
+  - 炊飯器
+  - ティーポット
+
+Home Appliances:
+  - vacuum cleaner
+  - robot vacuum
+  - washing machine
+  - dryer
+  - refrigerator
+  - freezer
+  - air conditioner
+  - air purifier
+  - humidifier
+  - dehumidifier
+  - heater
+  - fan
+  - 掃除機
+  - 洗濯機
+  - 冷蔵庫
+  - エアコン
+  - 加湿器
+  - 除湿機
+
+Furniture & Decor:
+  - sofa
+  - couch
+  - chair
+  - desk
+  - office chair
+  - bookshelf
+  - shelf
+  - bed frame
+  - mattress
+  - pillow
+  - blanket
+  - curtain
+  - rug
+  - lamp
+  - led bulb
+  - mirror
+  - 家具
+  - ソファ
+  - 椅子
+  - 机
+  - 棚
+  - 枕
+
+Clothing, Shoes & Bags:
+  - t-shirt
+  - tshirt
+  - shirt
+  - pants
+  - jeans
+  - jacket
+  - coat
+  - sweater
+  - hoodie
+  - dress
+  - skirt
+  - underwear
+  - socks
+  - shoes
+  - sneaker
+  - boot
+  - sandal
+  - backpack
+  - handbag
+  - wallet
+  - belt
+  - 服
+  - シャツ
+  - パンツ
+  - ジーンズ
+  - ジャケット
+  - 靴
+  - スニーカー
+  - バッグ
+  - リュック
+
+Jewelry & Watches:
+  - watch
+  - smartwatch
+  - apple watch
+  - garmin
+  - fitbit
+  - bracelet
+  - necklace
+  - earring
+  - ring jewelry
+  - 時計
+  - 腕時計
+
+Sports & Outdoors:
+  - yoga mat
+  - dumbbell
+  - barbell
+  - kettlebell
+  - resistance band
+  - treadmill
+  - bicycle
+  - cycling
+  - helmet
+  - running
+  - hiking
+  - camping
+  - tent
+  - sleeping bag
+  - backpacking
+  - swim
+  - golf
+  - tennis
+  - fishing
+  - スポーツ
+  - 自転車
+
+Automotive:
+  - car battery
+  - motorcycle
+  - bike battery
+  - tire
+  - engine oil
+  - car charger
+  - dash cam
+  - car mount
+  - jump starter
+  - obd
+  - バイク
+  - 自動車
+  - エンジンオイル
+
+Tools & Home Improvement:
+  - drill
+  - screwdriver
+  - hammer
+  - wrench
+  - pliers
+  - saw
+  - sander
+  - soldering iron
+  - multimeter
+  - measuring tape
+  - tool set
+  - 工具
+  - はんだごて
+
+Office & School Supplies:
+  - notebook
+  - pen
+  - pencil
+  - highlighter
+  - marker
+  - sticky note
+  - stapler
+  - paper clip
+  - file folder
+  - binder
+  - calculator
+  - ノート
+  - 文房具
+
+Arts, Crafts & Sewing:
+  - paint brush
+  - canvas
+  - watercolor
+  - acrylic paint
+  - sewing machine
+  - thread
+  - yarn
+  - knitting
+  - origami
+  - crochet
+  - 絵筆
+  - 手芸
+
+Musical Instruments:
+  - guitar
+  - bass guitar
+  - keyboard piano
+  - synthesizer
+  - drum kit
+  - violin
+  - ukulele
+  - capo
+  - guitar pick
+  - midi controller
+  - ギター
+  - ピアノ
+
+Toys & Games:
+  - lego
+  - puzzle toy
+  - board game
+  - card game
+  - action figure
+  - doll
+  - stuffed animal
+  - plush
+  - rc car
+  - drone toy
+  - おもちゃ
+  - ぬいぐるみ
+
+Baby & Kids:
+  - diaper
+  - baby food
+  - baby bottle
+  - stroller
+  - car seat
+  - baby monitor
+  - pacifier
+  - baby formula
+  - kids
+  - おむつ
+  - ベビー
+
+Pet Supplies:
+  - dog food
+  - cat food
+  - pet food
+  - cat litter
+  - dog leash
+  - cat tree
+  - aquarium
+  - bird cage
+  - pet bed
+  - ペットフード
+  - 犬
+  - 猫
+
+Garden & Outdoor:
+  - garden hose
+  - pot soil
+  - fertilizer
+  - lawn mower
+  - hedge trimmer
+  - bbq grill
+  - outdoor chair
+  - patio
+  - garden tool
+
+Industrial & Scientific:
+  - lab
+  - microscope
+  - test tube
+  - safety glasses
+  - work gloves
+  - respirator
+  - electronics components
+  - arduino
+  - raspberry pi
+  - breadboard
+  - resistor
+  - capacitor
+  - relay module
+  - dev board
+
+Cleaning & Household:
+  - laundry detergent
+  - dish soap
+  - fabric softener
+  - paper towel
+  - toilet paper
+  - tissue
+  - trash bag
+  - sponge
+  - all-purpose cleaner
+  - disinfectant
+  - 洗剤
+  - 柔軟剤
+  - トイレットペーパー
+
+Luggage & Travel:
+  - suitcase
+  - carry-on
+  - travel bag
+  - duffel bag
+  - travel adapter
+  - neck pillow
+  - スーツケース

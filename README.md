@@ -57,13 +57,28 @@ Open <http://localhost:8501>.
 
 ## Scope
 
-Only `Order History.csv` (physical retail orders) is read. Cancelled orders are
-excluded. Digital purchases (Kindle, Prime renewals, etc.) and refunds live in
-separate Amazon files and are not currently merged — they were ~2% of spend in
-testing and would distort YoY trends without a corresponding refund offset.
+By default the dashboard reads only `Order History.csv` (physical retail
+orders), excluding cancelled rows. Toggle **"Include digital content"** in the
+sidebar to merge `Digital Content Orders.csv` (Prime renewals, Kindle, Audible,
+etc.) — off by default because digital is typically <5% of spend, and the file
+splits a single purchase across multiple payment-method rows which inflates the
+"Total Items" count.
 
-Categorization is keyword-based on product names (Japanese and English). Add or
-refine rules in `_categorize()` inside `app.py` to fit your purchase mix.
+Refunds live in a separate Amazon file and are not currently subtracted.
+
+## Categories
+
+Categorization is keyword-based and driven by `categories.yaml`. The shipped
+file covers ~30 categories with English + Japanese keywords; first match wins,
+so put narrower categories above broader ones.
+
+To fit your own purchase mix, edit `categories.yaml` — no code change needed.
+Reorder categories to change priority, add languages, or introduce new buckets.
+Override the file location with `CATEGORIES_FILE=/path/to/your.yaml`.
+
+If a lot of items still land in "Other", look at the **Raw Data** expander,
+filter by `Category = Other`, and either add keywords for the recurring terms
+you see or add the relevant product names directly to a category.
 
 ## Configuration
 
